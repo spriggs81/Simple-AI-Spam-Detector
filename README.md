@@ -150,7 +150,7 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YourUsername/Simple-AI-Spam-Detector.git](https://github.com/YourUsername/Simple-AI-Spam-Detector.git)
+    git clone https://github.com/spriggs81/Simple-AI-Spam-Detector.git
     cd Simple-AI-Spam-Detector/spamdetectorapp # Adjust path if your project root is higher
     ```
 
