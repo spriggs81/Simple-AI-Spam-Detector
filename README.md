@@ -17,11 +17,17 @@ This project demonstrates a basic Artificial Intelligence model designed to clas
 The project is organized into several modular Python files for clarity and better understanding of each step in the AI pipeline.
 
 spamdetectorapp/
+
 ├── training_data.py
+
 ├── covert_to_num.py
+
 ├── train_the_ai.py
+
 ├── evaluate_model.py
+
 ├── new_data.py
+
 └── requirements.txt
 
 ### File Breakdown:
