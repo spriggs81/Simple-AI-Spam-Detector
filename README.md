@@ -101,6 +101,21 @@ spamdetectorapp/
         #Print a detail classification report
         print("\nclassification Report:\n", classification_report(y_test, y_pred, target_names=["not spam", "spam"]))
         ```
+        * **Example of Report in the Terminal:**
+        ```
+        *****  Predictions on New Emails  *****
+         Model Accuracy on Test Set: 0.84
+
+         classification Report:
+                        precision    recall  f1-score   support
+         
+             not spam       0.78      0.86      0.82        36
+                 spam       0.89      0.82      0.85        49
+         
+             accuracy                           0.84        85
+            macro avg       0.83      0.84      0.83        85
+         weighted avg       0.84      0.84      0.84        85
+        ```
 
 5.  **`new_data.py`**
     * **Purpose:** Demonstrates how to use the trained model to classify new, unseen email titles. It preprocesses the new text using the same `CountVectorizer` fitted during training and outputs the AI's prediction (spam or not spam).
@@ -123,6 +138,15 @@ spamdetectorapp/
 
         #Make predictons and print
         # ...
+        ```
+        * **Example of Data in the Terminal:**
+        ```
+        *****  Predictions on New Emails  *****
+         'You have won a lottery ticket!'  -->  Prediction: not spam
+         'Hi team, meeting at 3 PM.'  -->  Prediction: not spam
+         'Get your FREE money now!'  -->  Prediction: spam
+         'Confirming your appointment details.'  -->  Prediction: spam       
+         'LIMITED TIME OFFER! Click here.'  -->  Prediction: spam
         ```
 
 6.  **`requirements.txt`**
@@ -157,23 +181,23 @@ To run this project locally, follow these steps:
 2.  **Create a virtual environment:**
     It's highly recommended to use a virtual environment to manage project dependencies.
     ```bash
-    python3 -m venv venv # or 'python -m venv folder1' if that's what you named it
+    python3 -m venv venv # or 'python -m venv [folder name]' if you want to personally name it
     ```
 
 3.  **Activate the virtual environment:**
     * **On macOS / Linux:**
         ```bash
-        source venv/bin/activate # or 'source folder1/bin/activate'
+        source venv/bin/activate # or 'source [folder name]/bin/activate'
         ```
     * **On Windows (Command Prompt):**
         ```bash
-        venv\Scripts\activate.bat # or 'folder1\Scripts\activate.bat'
+        venv\Scripts\activate.bat # or '[folder name]\Scripts\activate.bat'
         ```
     * **On Windows (PowerShell):**
         ```powershell
-        venv\Scripts\Activate.ps1 # or 'folder1\Scripts\Activate.ps1'
+        venv\Scripts\Activate.ps1 # or '[folder name]\Scripts\Activate.ps1'
         ```
-    (Your terminal prompt should change to indicate the active environment, e.g., `(venv)`)
+    (Your terminal prompt should change to indicate the active environment, e.g., `(venv)` or `([folder name])`)
 
 4.  **Install dependencies:**
     With your virtual environment activated, install all required packages using `pip`:
